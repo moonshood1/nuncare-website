@@ -1,7 +1,7 @@
-import Navbar from "./assets/shared/navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/home_page";
+import Navbar from "./assets/shared/navbar";
 import Footer from "./assets/shared/footer";
+import HomePage from "./pages/home_page";
 import AboutPage from "./pages/about_page";
 import ServicePage from "./pages/services_page";
 import NetworkingPage from "./pages/networking_page";
