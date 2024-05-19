@@ -12,7 +12,7 @@ const Navbar = () => {
     <section className="bg-blueNun p-4 text-white lg:px-32">
       <div className="flex justify-center">
         <img
-          src="src/assets/images/main_logo.png"
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145195/nuncare-website/images/main_logo_nk8ery.png"
           alt="main_logo_nuncare"
           className="h-20"
         />

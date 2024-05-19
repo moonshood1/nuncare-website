@@ -45,7 +45,7 @@ const imageWithText = () => {
     <div className="relative">
       <img
         className="block w-full object-cover object-top h-[600px] filter brightness-50"
-        src="src/assets/images/cover_main.jpg"
+        src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145202/nuncare-website/images/cover_main_q76xk2.jpg"
         alt="Image d'accueil"
       />
 
@@ -131,7 +131,7 @@ const sendMessageBox = () => {
           <div className="flex justify-center items-center space-x-4 my-4">
             <div>
               <img
-                src="src/assets/images/icon_equipe_medical.png"
+                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145194/nuncare-website/images/icon_equipe_medical_a1hniq.png"
                 alt="Icone animation de medecins"
                 className="w-56"
               />
@@ -153,7 +153,7 @@ const sendMessageBox = () => {
           <div className="flex justify-center items-center space-x-4 my-4">
             <div>
               <img
-                src="src/assets/images/icon_profil_pro.png"
+                src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145194/nuncare-website/images/icon_profil_pro_qf0fvs.png"
                 alt="Icone animation de medecins"
                 className="w-56"
               />
@@ -234,7 +234,9 @@ const commentBox = () => {
         autoplayTimeout={1000}
       >
         <CommentContainer
-          imgUrl={"src/assets/images/cover_2.png"}
+          imgUrl={
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1716145200/nuncare-website/images/cover_2_lmjlhv.png"
+          }
           comment={
             "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
           }
@@ -243,7 +245,9 @@ const commentBox = () => {
         />
 
         <CommentContainer
-          imgUrl={"src/assets/images/cover_2.png"}
+          imgUrl={
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1716145200/nuncare-website/images/cover_2_lmjlhv.png"
+          }
           comment={
             "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
           }
@@ -251,7 +255,9 @@ const commentBox = () => {
           service={"En service au CHU de Yopougon"}
         />
         <CommentContainer
-          imgUrl={"src/assets/images/cover_2.png"}
+          imgUrl={
+            "https://res.cloudinary.com/dhc0siki5/image/upload/v1716145200/nuncare-website/images/cover_2_lmjlhv.png"
+          }
           comment={
             "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
           }
@@ -326,7 +332,7 @@ const appPresentationBox = () => {
 
       <div className="flex justify-center my-10">
         <img
-          src="src/assets/images/phone_background.png"
+          src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145196/nuncare-website/images/phone_background_f59jkc.png"
           alt="Telephone montrant l'application"
           className="max-w-[44rem]"
         />

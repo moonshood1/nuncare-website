@@ -19,7 +19,7 @@ function NetworkingPage() {
           </div>
           <div className="basis-1/3">
             <img
-              src="src/assets/images/cover_3.png"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145199/nuncare-website/images/cover_3_tii2xv.png"
               alt="image communauté medecins"
               className="max-w-[20rem]"
             />

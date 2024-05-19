@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex justify-between">
         <div className="flex space-x-3 items-center">
           <img
-            src="src/assets/icons/address_bl_icon.png"
+            src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145096/nuncare-website/icons/address_bl_icon_mvj2y4.png"
             alt="Icone de l'adress"
           />
           <div>
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex space-x-4">
           <div className="flex space-x-3 items-center">
             <img
-              src="src/assets/icons/clock_bl_icon.png"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145096/nuncare-website/icons/clock_bl_icon_b3p64p.png"
               alt="Icone de l'horloge"
             />
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
           <div className="flex space-x-3 items-center">
             <img
-              src="src/assets/icons/phone_bl_icon.png"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145096/nuncare-website/icons/phone_bl_icon_sc8nzv.png"
               alt="Icone du contact"
             />
             <div>
@@ -41,7 +41,7 @@ const Footer = () => {
 
           <div className="flex space-x-3 items-center">
             <img
-              src="src/assets/icons/email_bl_icon.png"
+              src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145096/nuncare-website/icons/email_bl_icon_kmvodo.png"
               alt="Icone de l'email"
             />
             <div>
