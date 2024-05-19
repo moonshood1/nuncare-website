@@ -2,10 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
 import CommentContainer from "../components/comment_container";
 import { PageWrapper } from "../utils/page_wrapper";
 import OwlCarousel from "react-owl-carousel";
@@ -53,19 +49,19 @@ const imageWithText = () => {
         <h1 className="text-2xl font-bold">
           Ressentez la différence avec nous
         </h1>
-        <h1 className="text-6xl my-2 leading-[5rem]">
+        <h1 className="text-4xl md:text-6xl my-2 leading-[3rem] md:leading-[5rem]">
           La <span className=" font-bold">plateforme</span> <br /> qui rassemble
           tous les <span className="font-bold">Médecins</span>
         </h1>
         <hr className="border-white w-1/2 mx-auto h-10 mt-10" />
-        <ul className="flex justify-center space-x-10 text-xl">
+        <ul className="flex justify-center space-x-10 md:text-xl">
           <li className="cursor-pointer">Formation</li>
           <li className="cursor-pointer">Rencontres</li>
           <li className="cursor-pointer">Réseautage</li>
         </ul>
 
         <motion.button
-          className="text-lg bg-redNun text-white p-2 rounded-md mt-10"
+          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
           whileHover={{ scale: 1.1 }}
         >
           Téléchargez l'application
@@ -77,8 +73,8 @@ const imageWithText = () => {
 
 const aboutUs = () => {
   return (
-    <div className="my-10 lg:px-32 bg-white ">
-      <h1 className="text-5xl uppercase font-bold text-black">
+    <div className="my-10 px-4 lg:px-32 bg-white">
+      <h1 className="text-3xl md:text-5xl uppercase font-bold text-black">
         QUI SOMMES-NOUS ?
       </h1>
       <div className="rounded-md p-4 shadow-md mt-10">
@@ -111,7 +107,7 @@ const aboutUs = () => {
       </div>
 
       <motion.button
-        className="text-lg bg-redNun text-white p-2 rounded-md mt-10"
+        className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
         whileHover={{ scale: 1.1 }}
       >
         Téléchargez l'application
@@ -122,10 +118,10 @@ const aboutUs = () => {
 
 const sendMessageBox = () => {
   return (
-    <div className="block bg-greyNun px-32 py-10">
-      <div className=" flex flex-row justify-between pt-10 ">
+    <div className="block bg-greyNun px-4 md:px-32 py-10">
+      <div className="block md:flex flex-row justify-between pt-10 ">
         <div className="basis-2/3">
-          <h1 className="text-5xl text-black font-bold">
+          <h1 className="text-3xl md:text-5xl text-black font-bold hidden md:block">
             Le meilleur pour la santé
           </h1>
           <div className="flex justify-center items-center space-x-4 my-4">
@@ -133,11 +129,11 @@ const sendMessageBox = () => {
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145194/nuncare-website/images/icon_equipe_medical_a1hniq.png"
                 alt="Icone animation de medecins"
-                className="w-56"
+                className="hidden md:block md:w-56"
               />
             </div>
             <div className="block">
-              <h2 className="text-black font-bold text-2xl my-2">
+              <h2 className="text-black font-bold text-xl md:text-2xl my-2">
                 Réseau professionnel et mise en relation
               </h2>
               <p>
@@ -155,11 +151,11 @@ const sendMessageBox = () => {
               <img
                 src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145194/nuncare-website/images/icon_profil_pro_qf0fvs.png"
                 alt="Icone animation de medecins"
-                className="w-56"
+                className="hidden md:block md:w-56"
               />
             </div>
             <div className="block">
-              <h2 className="text-black font-bold text-2xl my-2">
+              <h2 className="text-black font-bold text-xl md:text-2xl my-2">
                 Ressources de développement professionnel
               </h2>
               <p>
@@ -178,15 +174,16 @@ const sendMessageBox = () => {
           <img
             src="src/assets/images/cover_2.png"
             alt="Image docteur avec gants"
+            className="hidden md:block"
           />
         </div>
       </div>
 
-      <div className="bg-blueNun h-[32rem] w-full p-10">
-        <h1 className="text-center text-3xl text-white font-bold">
+      <div className="bg-blueNun md:h-[32rem] w-full p-10">
+        <h1 className="text-center text-xl md:text-3xl text-white font-bold">
           Prenez rendez-vous ou posez une question
         </h1>
-        <div className="flex space-x-4 my-4">
+        <div className="md:flex md:space-x-4 my-4">
           <input
             type="text"
             placeholder="Nom"
@@ -211,7 +208,7 @@ const sendMessageBox = () => {
         ></textarea>
         <div className="flex justify-center mt-10">
           <motion.button
-            className="text-lg bg-redNun text-white p-2 rounded-md"
+            className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md"
             whileHover={{ scale: 1.1 }}
           >
             Envoyer votre message
@@ -224,8 +221,10 @@ const sendMessageBox = () => {
 
 const commentBox = () => {
   return (
-    <div className="my-10 text-center">
-      <h1 className="text-5xl font-bold my-10">Les professionnels</h1>
+    <div className="my-10 text-center mx-4">
+      <h1 className="text-3xl md:text-5xl font-bold my-10">
+        Les professionnels
+      </h1>
       <OwlCarousel
         items={1}
         loop={true}
@@ -265,57 +264,14 @@ const commentBox = () => {
           service={"En service au CHU de Yopougon"}
         />
       </OwlCarousel>
-      {/* <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Autoplay]}
-        autoplay={{
-          delay: 5000,
-        }}
-      >
-        <SwiperSlide>
-          <CommentContainer
-            imgUrl={"src/assets/images/cover_2.png"}
-            comment={
-              "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
-            }
-            name={" Docteur Aka"}
-            service={"En service au CHU de Yopougon"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <CommentContainer
-            imgUrl={"src/assets/images/cover_2.png"}
-            comment={
-              "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
-            }
-            name={" Docteur Aka"}
-            service={"En service au CHU de Yopougon"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <CommentContainer
-            imgUrl={"src/assets/images/cover_2.png"}
-            comment={
-              "Cette plateforme m'a permis de trouver rapidement un médecin compétent grâce à sa diversité et sa fonctionnalité pratique"
-            }
-            name={" Docteur Aka"}
-            service={"En service au CHU de Yopougon"}
-          />
-        </SwiperSlide>
-      </Swiper> */}
     </div>
   );
 };
 
 const appPresentationBox = () => {
   return (
-    <div className="my-10 text-center shadow-lg mx-32 py-10 bg-gradient-to-b from-white from-40% to-blueNun to-90% rounded-2xl overflow-clip h-[44rem]">
-      <h1 className="text-5xl font-bold">
+    <div className="my-10 text-center shadow-lg mx-4 md:mx-32 py-10 bg-gradient-to-b from-white from-40% to-blueNun to-90% rounded-2xl overflow-clip h-[44rem]">
+      <h1 className="text-4xl md:text-5xl font-bold">
         Une application dédiée au corps médicale
       </h1>
       <p className="my-8">
@@ -324,7 +280,7 @@ const appPresentationBox = () => {
       </p>
 
       <motion.button
-        className="text-lg bg-redNun text-white p-2 rounded-md"
+        className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md"
         whileHover={{ scale: 1.1 }}
       >
         Téléchargez l'application
@@ -334,7 +290,7 @@ const appPresentationBox = () => {
         <img
           src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145196/nuncare-website/images/phone_background_f59jkc.png"
           alt="Telephone montrant l'application"
-          className="max-w-[44rem]"
+          className="max-w-[35rem] md:max-w-[44rem]"
         />
       </div>
     </div>

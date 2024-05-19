@@ -3,11 +3,13 @@ import { PageWrapper } from "../utils/page_wrapper";
 function AboutPage() {
   return (
     <PageWrapper>
-      <section className="px-32">
-        <div className="flex mt-10 h-[19rem] overflow-clip">
-          <div className="basis-2/3">
-            <h1 className="font-bold text-5xl">A propos de Nuncare</h1>
-            <p className="mt-8 text-lg">
+      <section className="lg:px-32 px-4">
+        <div className="flex mt-10 md:h-[19rem] overflow-clip">
+          <div className="md:basis-2/3">
+            <h1 className="font-bold text-4xl md:text-5xl">
+              A propos de Nuncare
+            </h1>
+            <p className="mt-8 md:text-lg">
               Nuncare est bien plus qu'une simple plateforme en ligne. Nous
               sommes une communauté dédiée à soutenir et à renforcer la
               profession médicale dans son ensemble. Fondée sur des valeurs de
@@ -16,16 +18,16 @@ function AboutPage() {
               leur carrière.
             </p>
           </div>
-          <div className="basis-1/3">
+          <div className="hidden md:basis-1/3">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145199/nuncare-website/images/cover_3_tii2xv.png"
               alt="image communauté medecins"
-              className="max-w-[20rem]"
+              className="md:max-w-[20rem]"
             />
           </div>
         </div>
-        <div className="shadow-sm shadow-blueNun p-4  text-lg">
-          <h1 className="font-bold text-4xl">Notre Mission</h1>
+        <div className="shadow-sm shadow-blueNun p-4 mt-4 md:mt-0 md:text-lg">
+          <h1 className="font-bold text-2xl md:text-4xl">Notre Mission</h1>
           <p className="mt-8">
             Notre mission chez Nuncare est de créer un espace où les médecins
             peuvent se connecter, collaborer et s'épanouir ensemble. Nous
@@ -34,7 +36,7 @@ function AboutPage() {
             œuvre pour faciliter les interactions et les échanges entre les
             professionnels de la santé.
           </p>
-          <h1 className="font-bold text-4xl mt-8">Nos Valeurs</h1>
+          <h1 className="font-bold text-2xl md:text-4xl mt-8">Nos Valeurs</h1>
           <p className="mt-4">
             Au cœur de Nuncare se trouvent des valeurs fondamentales qui guident
             chacune de nos actions et décisions. Nous croyons en :
@@ -63,7 +65,7 @@ function AboutPage() {
               </li>
             </ul>
           </p>
-          <h1 className="font-bold text-4xl mt-8">Nos Services</h1>
+          <h1 className="font-bold text-2xl md:text-4xl mt-8">Nos Services</h1>
           <p className="mt-4">
             Chez Nuncare, nous offrons une gamme de services conçus pour
             répondre aux besoins variés des médecins, y compris :

@@ -3,11 +3,13 @@ import { PageWrapper } from "../utils/page_wrapper";
 function ServicePage() {
   return (
     <PageWrapper>
-      <section className="px-32">
-        <div className="flex mt-10 h-[19rem] overflow-clip">
-          <div className="basis-2/3">
-            <h1 className="font-bold text-5xl">Services Offerts par Nuncare</h1>
-            <p className="mt-8 text-lg">
+      <section className="lg:px-32 px-4">
+        <div className="flex mt-10 md:h-[19rem] overflow-clip">
+          <div className="md:basis-2/3">
+            <h1 className="font-bold text-4xl md:text-5xl">
+              Services Offerts par Nuncare
+            </h1>
+            <p className="mt-8 md:text-lg">
               Nuncare s'engage à fournir une gamme complète de services pour
               soutenir les médecins dans tous les aspects de leur pratique
               médicale. Que ce soit pour favoriser le développement
@@ -18,7 +20,7 @@ function ServicePage() {
               réussir.
             </p>
           </div>
-          <div className="basis-1/3">
+          <div className="hidden md:basis-1/3">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145199/nuncare-website/images/cover_3_tii2xv.png"
               alt="image communauté medecins"
@@ -26,8 +28,8 @@ function ServicePage() {
             />
           </div>
         </div>
-        <div className="shadow-sm shadow-blueNun p-4  text-lg">
-          <h1 className="font-bold text-4xl">
+        <div className="shadow-sm shadow-blueNun p-4 mt-4 md:mt-0 md:text-lg">
+          <h1 className="font-bold text-2xl md:text-4xl">
             Réseau Professionnel et Mise en Relation :
           </h1>
           <p className="mt-8">
@@ -42,10 +44,10 @@ function ServicePage() {
             collaboration clinique ou académique, ou tout simplement échanger
             des idées et des meilleures pratiques.
           </p>
-          <h1 className="font-bold text-4xl mt-16">
+          <h1 className="font-bold text-2xl md:text-4xl mt-8 md:mt-16">
             Ressources de Développement Professionnel{" "}
           </h1>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 md:text-lg">
             Nuncare fournit aux médecins un accès à une vaste bibliothèque de
             ressources de développement professionnel. Cela comprend des cours
             en ligne, des webinaires, des conférences, des publications
@@ -56,10 +58,10 @@ function ServicePage() {
             gestion, et à répondre aux exigences en constante évolution de la
             pratique médicale.
           </p>
-          <h1 className="font-bold text-4xl mt-16">
+          <h1 className="font-bold text-2xl md:text-4xl mt-8 md:mt-16">
             Soutien Administratif et Gestion de Pratique
           </h1>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 md:text-lg">
             Enfin, Nuncare reconnaît l'importance du bien-être émotionnel des
             médecins et s'engage à fournir un soutien complet dans ce domaine.
             Nous offrons une variété de ressources et de programmes visant à
