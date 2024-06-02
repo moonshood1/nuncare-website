@@ -18,7 +18,7 @@ function AboutPage() {
               leur carrière.
             </p>
           </div>
-          <div className="hidden md:basis-1/3">
+          <div className="hidden md:basis-1/3 md:block">
             <img
               src="https://res.cloudinary.com/dhc0siki5/image/upload/v1716145199/nuncare-website/images/cover_3_tii2xv.png"
               alt="image communauté medecins"
