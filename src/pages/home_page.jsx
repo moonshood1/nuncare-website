@@ -8,6 +8,9 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
+const fileUrl =
+  "https://firebasestorage.googleapis.com/v0/b/nuncare-aa7c4.appspot.com/o/app-release.zip?alt=media";
+
 function HomePage() {
   const { ref: myRef, inView: isVisible } = useInView({
     threshold: 0,
@@ -60,12 +63,14 @@ const imageWithText = () => {
           <li className="cursor-pointer">Réseautage</li>
         </ul>
 
-        <motion.button
-          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
-          whileHover={{ scale: 1.1 }}
-        >
-          Téléchargez l'application
-        </motion.button>
+        <a href={fileUrl} download={true}>
+          <motion.button
+            className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
+            whileHover={{ scale: 1.1 }}
+          >
+            Téléchargez l'application
+          </motion.button>
+        </a>
       </div>
     </div>
   );
@@ -106,12 +111,14 @@ const aboutUs = () => {
         </p>
       </div>
 
-      <motion.button
-        className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
-        whileHover={{ scale: 1.1 }}
-      >
-        Téléchargez l'application
-      </motion.button>
+      <a href={fileUrl} download={true}>
+        <motion.button
+          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
+          whileHover={{ scale: 1.1 }}
+        >
+          Téléchargez l'application
+        </motion.button>
+      </a>
     </div>
   );
 };
@@ -278,13 +285,14 @@ const appPresentationBox = () => {
         Bénéficiez d'un accès simplifié aux médecins proches de vous grâce à
         notre application intuitive.
       </p>
-
-      <motion.button
-        className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md"
-        whileHover={{ scale: 1.1 }}
-      >
-        Téléchargez l'application
-      </motion.button>
+      <a href={fileUrl} download={true}>
+        <motion.button
+          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md"
+          whileHover={{ scale: 1.1 }}
+        >
+          Téléchargez l'application
+        </motion.button>
+      </a>
 
       <div className="flex justify-center my-10">
         <img
