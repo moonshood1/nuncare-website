@@ -5,7 +5,8 @@ import HomePage from "./pages/home_page";
 import AboutPage from "./pages/about_page";
 import ServicePage from "./pages/services_page";
 import NetworkingPage from "./pages/networking_page";
-import NewsPage from "./pages/NewsPage";
+import NewsPage from "./pages/news_page";
+import PolicyPage from "./pages/policy_page";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/services" element={<ServicePage />} />
             <Route path="/networking" element={<NetworkingPage />} />
             <Route path="/news-and-events" element={<NewsPage />} />
+            <Route path="/privacy-and-policy" element={<PolicyPage />} />
           </Routes>
           <Footer />
         </div>

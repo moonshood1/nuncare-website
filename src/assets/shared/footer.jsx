@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -56,9 +58,12 @@ const Footer = () => {
         <p className="font-light my-4 md:my-0">
           {currentYear}, nuncare by Skot
         </p>
-        <p className="font-light">
-          Politique de confidentialité et conditions d'utilisation
-        </p>
+
+        <Link to="/privacy-and-policy">
+          <p className="font-light">
+            Politique de confidentialité et conditions d'utilisation
+          </p>
+        </Link>
       </div>
     </footer>
   );
