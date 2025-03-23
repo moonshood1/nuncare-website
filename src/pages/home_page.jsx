@@ -7,6 +7,7 @@ import { PageWrapper } from "../utils/page_wrapper";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import StartButton from "../assets/shared/startButton";
 
 const fileUrl =
   "https://firebasestorage.googleapis.com/v0/b/nuncare-aa7c4.appspot.com/o/app-release.zip?alt=media";
@@ -62,13 +63,12 @@ const imageWithText = () => {
           <li className="cursor-pointer">Rencontres</li>
           <li className="cursor-pointer">Réseautage</li>
         </ul>
-
-        <a href={fileUrl} download={true}>
+        <a href="https://nuncare-web-app.vercel.app/" target="_blank">
           <motion.button
             className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
             whileHover={{ scale: 1.1 }}
           >
-            Téléchargez l'application
+            Commencer
           </motion.button>
         </a>
       </div>
@@ -111,12 +111,12 @@ const aboutUs = () => {
         </p>
       </div>
 
-      <a href={fileUrl} download={true}>
+      <a href="https://nuncare-web-app.vercel.app/" target="_blank">
         <motion.button
           className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
           whileHover={{ scale: 1.1 }}
         >
-          Téléchargez l'application
+          Commencer
         </motion.button>
       </a>
     </div>
@@ -285,12 +285,12 @@ const appPresentationBox = () => {
         Bénéficiez d'un accès simplifié aux médecins proches de vous grâce à
         notre application intuitive.
       </p>
-      <a href={fileUrl} download={true}>
+      <a href="https://nuncare-web-app.vercel.app/" target="_blank">
         <motion.button
-          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md"
+          className="text-sm md:text-lg bg-redNun text-white p-2 rounded-md mt-10"
           whileHover={{ scale: 1.1 }}
         >
-          Téléchargez l'application
+          Commencer
         </motion.button>
       </a>
 

@@ -17,7 +17,7 @@ function PolicyPage() {
                 Le présent avis de confidentialité pour nous décrit comment et
                 pourquoi nous pouvons accéder, collecter, stocker, utiliser
                 et/ou partager vos informations personnelles lorsque vous
-                utilisez nos services , y compris lorsque vous : téléchargez et
+                utilisez nos services , y compris lorsque vous : Commencer et
                 utilisez notre application mobile. vous vous engagez avec nous
                 d'une autre manière, notamment dans le cadre de ventes, de
                 marketing ou d'événements. Vous avez des questions ou des
